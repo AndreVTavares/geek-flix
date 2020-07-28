@@ -1,7 +1,7 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
+      "titulo": "Games",
       "link": "https://www.alura.com.br/formacao-front-end",
       "cor": "#6BD1FF",
       "link_extra": {
@@ -10,12 +10,12 @@
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Marvel's Spider-Man: Miles Morales - Announcement Trailer | PS5",
+          "url": "https://www.youtube.com/watch?v=gHzuHo80U2M"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "The Last of Us Part II - Novo Trailer da História | PS4",
+          "url": "https://www.youtube.com/watch?v=16RlfA39vhM"
         },
         {
           "titulo": "Componentização com VanillaJS #AluraMais",
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "titulo": "Back End",
+      "titulo": "Séries",
       "cor": "#00C86F",
       "link_extra": {
         "text": "Cursos de Back End na Alura",
@@ -52,8 +52,8 @@
       },
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "Better Call Saul Season 5 Trailer | Rotten Tomatoes TV",
+          "url": "https://www.youtube.com/watch?v=quC2GkURViU"
         },
         {
           "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Filmes",
       "cor": "#9cd33b",
       "link_extra": {
         "text": "Cursos de Data Science na Alura",
@@ -100,84 +100,56 @@
       ]
     },
     {
-      "titulo": "Filmes",
+      "titulo": "Animes",
       "cor": "orange",
       "videos": [
         {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+          "titulo": "The God of High School - Opening | Contradiction (feat. Tyler Carter)",
+          "url": "https://www.youtube.com/watch?v=eRJyYfAq2tk"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
-        },
-        {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
-        },
-        {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+          "titulo": "Fire Force Season 2 – Opening Theme – SPARK-AGAIN",
+          "url": "https://www.youtube.com/watch?v=xLGtT8WuidM"
         }
       ]
     },
     {
-      "titulo": "Games",
-      "cor": "red",
+      "titulo": "Mangás",
+      "cor": "green",
       "link_extra": {
         "text": "Formação de Jogos na Alura",
         "url": "https://www.alura.com.br/formacao-jogos-unity"
       },
       "videos": [
         {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+          "titulo": "[Review] VINLAND SAGA DELUXE - EDIÇÃO DA PANINI - SUA CHANCE DE RELER UMA HISTÓRIA PERFEITA!!!",
+          "url": "https://www.youtube.com/watch?v=uIpUPMOfhPA"
         },
         {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
-        },
-        {
-          "titulo": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
-        },
-        {
-          "titulo": "Resident Evil 8",
-          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
-        },
-        {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+          "titulo": "TOP 10 MELHORES MANGÁS DE 2019 (mais menções honrosas) | PN Extra #174",
+          "url": "https://www.youtube.com/watch?v=NdHc4CWZ0cY"
         }
       ]
     },
     {
-      "titulo": "Aprendendo a aprender tecnologia",
+      "titulo": "K-Drama",
       "cor": "#6b5be2",
       "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+        "text": "Faça sua lista de Doramas",
+        "url": "https://mydramalist.com/"
       },
       "videos": [
         {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+          "titulo": "It's Okay to Not Be Okay | Official Trailer #2 | Netflix [ENG SUB]",
+          "url": "https://www.youtube.com/watch?v=89i-Fn2CqQg"
         },
         {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+          "titulo": "MY MISTER - OFFICIAL TRAILER | IU, Lee Sun Gyun, Jang Ki Yong, Oh Na Ra",
+          "url": "https://www.youtube.com/watch?v=f-Eaa3f3gDo"
         },
         {
-          "titulo": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        },
-        {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
-        },
-        {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          "titulo":"Extracurricular | Official Trailer | Netflix [ENG SUB]",
+          "url":"https://www.youtube.com/watch?v=aV_DBz2rKsI"
         }
       ]
     }
