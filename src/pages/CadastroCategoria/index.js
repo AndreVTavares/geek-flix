@@ -35,7 +35,7 @@ function CadastroCategoria() {
 
   return (
     <PageDefault>
-      <h1>Cadastro de Categoria: {values.titulo}</h1>
+      <h1>Cadastro de Categoria:</h1>
 
       <form onSubmit={(event) => handleSubmit(event)}>
         <FormField
