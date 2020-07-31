@@ -1,36 +1,73 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-// export const FormLabel = styled.label`
-//   font-size: 16px;
-//   font-weight: normal;
-//   pointer-events: none;
-//   position: relative;
-//   left: 5px;
-//   top: 50px;
-//   transition: 300ms ease all;
-
-//   &:focus {
-//     top: -20px;
-//     font-size: 12px;
-//   }
-// `;
-
-export const FormInput = styled.input`
-  background: black;
-  color: white;
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: flex;
-  width:  ${({type}) => type === 'color' ? `25%` : `40%`};
-  height: ${({type}) => type === 'color' ? `50px` : `none`};
-  border: none;
-  border-radius: 0;
-  border-bottom: ${({type}) => type === 'color' ? `none` : `3px solid #9ad5ff`}; 
-  margin: 25px 0;
-
-  &:focus {
-    outline: none;
-    border-bottom: ${({type}) => type === 'color' ? `none` : `5px solid #9ad5ff`};
+export const FormFieldWrapper = styled.div`
+  position: relative;
+  textarea {
+    min-height: 150px;
+  }
+  input[type="color"] {
+    padding-left: 56px;
   }
 `;
 
+export const Label = styled.label``;
+
+Label.Text = styled.span`
+  color: #e5e5e5;
+  height: 57px;
+  position: absolute;
+  top: 0;
+  left: 16px;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  transform-origin: 0% 0%;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+
+  transition: 0.1s ease-in-out;
+`;
+
+export const FormInput = styled.input`
+  background: #53585f;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 57px;
+  font-size: 18px;
+
+  outline: 0;
+  border: 0;
+  border-top: 4px solid transparent;
+
+  padding: 8px 16px;
+  margin-bottom: 45px;
+
+  resize: none;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+
+  &:focus {
+    border-bottom: ${({ type }) =>
+      type === "color" ? `none` : `5px solid #9ad5ff`};
+  }
+
+  &:focus:not([type="color"]) + ${Label.Text} {
+    transform: scale(0.6) translateY(-10px);
+  }
+
+  ${({ value }) => {
+    const hasValue = value.length > 0;
+    return (
+      hasValue &&
+      css`
+        &:not([type="color"]) + ${Label.Text} {
+          transform: scale(0.6) translateY(-10px);
+        }
+      `
+    );
+  }}
+`;
