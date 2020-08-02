@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PageDefault from "../../components/PageDefault";
 import { Link } from "react-router-dom";
 
 import FormField from "../../components/FormField";
-import Button from '../../components/Button';
+import Button from "../../components/Button";
 
 function CadastroCategoria() {
   const initia_values = {
@@ -14,6 +14,16 @@ function CadastroCategoria() {
 
   const [categorias, setCategorias] = useState([]);
   const [values, setValues] = useState(initia_values);
+
+  useEffect(() => {
+    const URL = "http://localhost:8080/categorias";
+    fetch(URL)
+      .then(async (response) => {
+        const resposta = await response.json();
+        console.log(resposta);
+        setCategorias([...resposta]);
+    });
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -66,12 +76,16 @@ function CadastroCategoria() {
       </form>
 
       <ul>
-        {categorias.map((categoria, indice) => (
-          <li key={`${categoria.titulo}${indice}`}>
-            <h4 style={{ background: categoria.cor }}>{categoria.titulo}</h4>
-            <span>{categoria.descricao}</span>
-          </li>
-        ))}
+        {categorias.length === 0 ? (
+          <div>Loading...</div>
+        ) : (
+          categorias.map((categoria, indice) => (
+            <li key={`${categoria.titulo}${indice}`}>
+              <h4 style={{ background: categoria.cor }}>{categoria.titulo}</h4>
+              <span>{categoria.descricao}</span>
+            </li>
+          ))
+        )}
       </ul>
 
       <Link to="/cadastro/video">Video</Link>
