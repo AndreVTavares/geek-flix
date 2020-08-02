@@ -1,0 +1,16 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Games",
+      "descricao": "Categoria de videos relacionada a jogos",
+      "cor": "#4169E1"
+    },
+    {
+      "id": 2,
+      "titulo": "Séries",
+      "descricao": "Categoria de videos relacionada a séries",
+      "cor": "#00C86F"
+    }
+  ]
+}
