@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import dadosIniciais from "../../data/dados_iniciais.json";
-
 import categoriasRepository from "../../repositories/categorias";
 
 import BannerMain from "../../components/BannerMain";
@@ -15,7 +13,7 @@ function Home() {
     categoriasRepository.getAllWithVideos().then((respostaDadosIniciais) => {
       console.log(respostaDadosIniciais);
       setDadosIniciais([...respostaDadosIniciais]);
-    });
+    })
   }, []);
 
   useEffect(() => {}, []);

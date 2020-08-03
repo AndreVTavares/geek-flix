@@ -9,7 +9,13 @@ const FormField = ({ label, type, value, name, onChange }) => {
   return (
     <FormFieldWrapper>
       <Label>
-        <FormInput as={tag} type={type} value={value} name={name} onChange={onChange} />
+        <FormInput
+          as={tag}
+          type={type}
+          value={value}
+          name={name}
+          onChange={onChange}
+        />
 
         <Label.Text>{label}:</Label.Text>
       </Label>
