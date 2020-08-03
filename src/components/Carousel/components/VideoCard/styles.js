@@ -1,10 +1,21 @@
 import styled from "styled-components";
 
+export const VideoCardSpan = styled.span`
+  width: 100%;
+  height: 60px;
+  color: #ffffff;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  transform: translateY(60px);
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  transition: transform 200ms linear 0s;
+`;
+
 export const VideoCardContainer = styled.a`
-  border: 2px solid;
-  border-radius: 4px;
   text-decoration: none;
-  overflow: hidden;
   cursor: pointer;
   color: white;
   flex: 0 0 298px;
@@ -18,13 +29,18 @@ export const VideoCardContainer = styled.a`
   display: flex;
   align-items: flex-end;
   padding: 16px;
-
-  transition: opacity 0.3s;
   &:hover,
   &:focus {
-    opacity: 0.5;
     transform: scale(1.1);
-    transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    transition: transform 0.5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  }
+
+  &:hover,
+  &:focus {
+    ${VideoCardSpan} {
+      transform: translateY(0px);
+      opacity: 0.85;
+    }
   }
 
   &:not(:first-child) {

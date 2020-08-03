@@ -5,42 +5,31 @@ import { Link } from "react-router-dom";
 import FormField from "../../components/FormField";
 import Button from "../../components/Button";
 
+import categoriasRepository from "../../repositories/categorias";
+import useForm from "../../hooks/useForm";
+
 function CadastroCategoria() {
-  const initia_values = {
+  const initial_values = {
     titulo: "",
     descricao: "",
     cor: "",
   };
 
+  const { handleChange, clearForm, values } = useForm(initial_values);
+
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(initia_values);
 
   useEffect(() => {
-    const URL = "http://localhost:8080/categorias";
-    fetch(URL)
-      .then(async (response) => {
-        const resposta = await response.json();
-        console.log(resposta);
-        setCategorias([...resposta]);
+    categoriasRepository.getAllWithVideos().then((respostaCategorias) => {
+      console.log(respostaCategorias);
+      setCategorias([...respostaCategorias]);
     });
   }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setCategorias([...categorias, values]);
-    setValues(initia_values);
-  };
-
-  const setValue = (chave, valor) => {
-    // chave: nome, descricao, bla, bli
-    setValues({
-      ...values,
-      [chave]: valor, // nome: 'valor'
-    });
-  };
-
-  const handleChange = (event) => {
-    setValue(event.target.getAttribute("name"), event.target.value);
+    clearForm();
   };
 
   return (
