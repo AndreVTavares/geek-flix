@@ -4,44 +4,45 @@ import dadosIniciais from "../../data/dados_iniciais.json";
 
 import categoriasRepository from "../../repositories/categorias";
 
-import Menu from "../../components/Menu";
 import BannerMain from "../../components/BannerMain";
 import Carousel from "../../components/Carousel";
-import Footer from "../../components/Footer";
+import PageDefault from "../../components/PageDefault";
 
 function Home() {
-  const [dadosIniciais2, setDadosIniciais2] = useState([]);
-
+  const [dadosIniciais, setDadosIniciais] = useState([]);
 
   useEffect(() => {
+    categoriasRepository.getAllWithVideos().then((respostaDadosIniciais) => {
+      console.log(respostaDadosIniciais);
+      setDadosIniciais([...respostaDadosIniciais]);
+    });
+  }, []);
 
-  }, [])
+  useEffect(() => {}, []);
   return (
-    <div style={{ background: "#141414" }}>
-      <Menu />
+    <PageDefault paddingAll={0}>
+      {dadosIniciais.length === 0 && <div>Loading...</div>}
 
-      <BannerMain
-        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-        url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={
-          "O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. Mas o que eles fazem, afinal? Descubra com a Vanessa!"
+      {dadosIniciais.map((dadoInicial, indice) => {
+        if (indice === 0) {
+          return (
+            <>
+              <BannerMain
+                videoTitle={dadosIniciais[0].videos[0].titulo}
+                url={dadosIniciais[0].videos[0].url}
+                videoDescription={
+                  "Miles Morales assume o papel principal nessa nova aventura para o PlayStation 5!"
+                }
+              />
+
+              <Carousel ignoreFirstVideo category={dadosIniciais[0]} />
+            </>
+          );
         }
-      />
 
-      <Carousel ignoreFirstVideo category={dadosIniciais.categorias[0]} />
-
-      <Carousel category={dadosIniciais.categorias[1]} />
-
-      <Carousel category={dadosIniciais.categorias[2]} />
-
-      <Carousel category={dadosIniciais.categorias[3]} />
-
-      <Carousel category={dadosIniciais.categorias[4]} />
-
-      <Carousel category={dadosIniciais.categorias[5]} />
-
-      <Footer />
-    </div>
+        return <Carousel key={dadoInicial.id} category={dadoInicial} />;
+      })}
+    </PageDefault>
   );
 }
 

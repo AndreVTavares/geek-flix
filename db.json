@@ -11,6 +11,128 @@
       "titulo": "Séries",
       "descricao": "Categoria de videos relacionada a séries",
       "cor": "#00C86F"
+    },
+    {
+      "id": 3,
+      "titulo": "Front End",
+      "cor": "#6BD1FF"
+    },
+    {
+      "id": 4,
+      "titulo": "Animes",
+      "cor": "orange"
+    },
+    {
+      "id": 5,
+      "titulo": "Mangás",
+      "cor": "green"
+    },
+    {
+      "id": 6,
+      "titulo": "K-Drama",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Faça sua lista de Doramas",
+        "url": "https://mydramalist.com/"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Marvel's Spider-Man: Miles Morales - Announcement Trailer | PS5",
+      "url": "https://www.youtube.com/watch?v=gHzuHo80U2M"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "The Last of Us Part II - Novo Trailer da História | PS4",
+      "url": "https://www.youtube.com/watch?v=16RlfA39vhM"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Componentização com VanillaJS #AluraMais",
+      "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Pare de chutar e aprenda a display: inline #01",
+      "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
+      "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Novidades do Angular v9",
+      "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+    },
+    {
+      "id": 8,
+      "categoriaId": 2,
+      "titulo": "Better Call Saul Season 5 Trailer | Rotten Tomatoes TV",
+      "url": "https://www.youtube.com/watch?v=quC2GkURViU"
+    },
+    {
+      "id": 9,
+      "categoriaId": 4,
+      "titulo": "The God of High School - Opening | Contradiction (feat. Tyler Carter)",
+      "url": "https://www.youtube.com/watch?v=eRJyYfAq2tk"
+    },
+    {
+      "id": 10,
+      "categoriaId": 4,
+      "titulo": "Fire Force Season 2 – Opening Theme – SPARK-AGAIN",
+      "url": "https://www.youtube.com/watch?v=xLGtT8WuidM"
+    },
+    {
+      "id": 11,
+      "categoriaId": 6,
+      "titulo": "It's Okay to Not Be Okay | Official Trailer #2 | Netflix [ENG SUB]",
+      "url": "https://www.youtube.com/watch?v=89i-Fn2CqQg"
+    },
+    {
+      "id": 12,
+      "categoriaId": 6,
+      "titulo": "MY MISTER - OFFICIAL TRAILER | IU, Lee Sun Gyun, Jang Ki Yong, Oh Na Ra",
+      "url": "https://www.youtube.com/watch?v=f-Eaa3f3gDo"
+    },
+    {
+      "id": 13,
+      "categoriaId": 6,
+      "titulo": "Extracurricular | Official Trailer | Netflix [ENG SUB]",
+      "url": "https://www.youtube.com/watch?v=aV_DBz2rKsI"
+    },
+    {
+      "id": 14,
+      "categoriaId": 1,
+      "titulo": "Final Fantasy VII Remake - Final Trailer | PS4",
+      "url": "https://www.youtube.com/watch?v=ERgrFVhL-n4"
+    },
+    {
+      "id": 15,
+      "categoriaId": 5,
+      "titulo": "[Review] VINLAND SAGA DELUXE - EDIÇÃO DA PANINI - SUA CHANCE DE RELER UMA HISTÓRIA PERFEITA!!!",
+      "url": "https://www.youtube.com/watch?v=uIpUPMOfhPA"
+    },
+    {
+      "id": 16,
+      "categoriaId": 5,
+      "titulo": "TOP 10 MELHORES MANGÁS DE 2019 (mais menções honrosas) | PN Extra #174",
+      "url": "https://www.youtube.com/watch?v=NdHc4CWZ0cY"
     }
   ]
 }
